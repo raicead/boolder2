@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booldering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <aside id="sidebar">
+            <h2>Menu</h2>
+            <button id="connect-wallet">Connect Wallet</button>
+            <button id="settings">Settings</button>
+            <button id="daily">Daily Leaderboard</button>
+            <button id="all-time">All-Time Leaderboard</button>
+            <button id="about">About</button>
+            <h3>Programmable Controls</h3>
+            <textarea id="code-snippet" rows="10" cols="30">
+/* Example controls:
+document.addEventListener('keydown', (e) => {
+    switch (e.key) {
+        case 'ArrowLeft':
+            // Move player left
+            break;
+        case 'ArrowRight':
+            // Move player right
+            break;
+        case 'ArrowUp':
+            // Move player up
+            break;
+        case 'e': // Move up-right
+            // Move player diagonally up-right
+            break;
+        case 'q': // Move up-left
+            // Move player diagonally up-left
+            break;
+    }
+});
+*/
+            </textarea>
+            <button id="submit">Submit</button>
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+            <div id="score-display">
+                <h3>Score: <span id="score">0</span></h3>
+            </div>
+            <h3>Vertical Threshold</h3>
+            <select id="vertical-threshold">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+            <h3>Starting Column</h3>
+            <select id="starting-column">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+        </aside>
+        <main id="main-content">
+            <h1>booldering</h1>
+            <div id="game-container"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
